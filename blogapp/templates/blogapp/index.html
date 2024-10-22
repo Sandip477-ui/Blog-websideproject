@@ -1,0 +1,19 @@
+{% extends 'blogapp/base.html' %}
+
+{% block title %}Home - My Blog{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <ul class="list-group">
+        {% for post in allposts %}
+        <li class="list-group-item">
+
+            <a href="{% url 'single_post' post.id %}" class="post-link">{{ post.title }}</a>
+            <p>{{ post.excerpt }}</p>
+            <a href="{% url 'single_post' post.id %}">Read more</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    color: #3498db; /* A vibrant blue color for the h1 */
+    padding: 3px 0; /* Add some padding above and below the heading */
+    font-size: 2.1em; /* Increase font size for prominence */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #2c3e50; /* A dark color for better contrast */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+}
+
+nav li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav a {
+    color: white; /* White text color for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding for better touch targets */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a.active {
+    color: white; /* Active link text color */
+    background-color: #3498db; /* Active link background color */
+    padding: 10px 20px; /* Same padding for consistency */
+    border-radius: 5px; /* Rounded corners for consistency */
+}
+
+nav a:hover {
+    background-color: #3498db; /* Blue background on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Post List Styles */
+* ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the list and add top margin */
+} 
+
+li {
+    background: white; /* White background for list items */
+    margin: 10px 0; /* Add space between items */
+    padding: 15px; /* Add padding for better touch target */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+li:hover {
+    background: #e8f4fa; /* Light blue background on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #3498db; /* Match link color with h1 */
+    font-weight: bold; /* Make links bold */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+ .home-link {
+    display: inline-block; /* Block-level element */
+    padding: 12px 20px; /* Padding */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    font-size: 16px; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+} 
+

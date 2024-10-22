@@ -1,0 +1,13 @@
+{% extends 'blogapp/base.html' %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block header %}
+    <h1>{{ post.title }}</h1>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="post-content">
+        <p>{{ post.content | safe }}</p>
+    </div>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Go to Home</a>
+</div>
+{% endblock %}

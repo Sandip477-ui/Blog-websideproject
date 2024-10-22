@@ -1,0 +1,57 @@
+
+{% load static %}
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'blogapp/css/style.css' %}">
+
+    <title>About</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="{% url 'home' %}" class="{% if request.path == 'home/' %}active{% endif %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'about' %}" class="{% if request.path == '/about/' %}active{% endif %}">About</a>
+            </li>
+            <li>
+                <a href="{% url 'contact' %}" class="{% if request.path == '/contact/' %}active{% endif %}">Contact</a>
+            </li>
+        </ul>
+    </nav> 
+    <h1>About Us</h1>
+    <p>Welcome to our tech blog! This space is dedicated to sharing insights, experiences, and knowledge in the
+        ever-evolving world of technology.</p>
+
+    <h2>Our Mission</h2>
+    <p>We aim to inspire and educate our readers by providing valuable content on the latest technology trends, tools,
+        and innovations. Our goal is to help you navigate the tech landscape and empower you with knowledge.</p>
+
+    <h2>Meet the Author</h2>
+    <p>I am Sandip, a technology enthusiast with a passion for exploring new gadgets, software, and emerging
+        technologies. Through this blog, I want to share my experiences, insights, and discoveries in the tech world.
+    </p>
+
+    <h2>Join Our Community</h2>
+    <p>I believe in the power of knowledge sharing. I encourage you to engage with the content, share your thoughts, and
+        join the discussion in the comments section. Together, we can learn and grow in our understanding of technology.
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to connect, feel free to <a href="{% url 'contact' %}">contact us</a> or
+        follow us on our social media platforms.</p>
+
+    </p>
+    <a href="{% url 'home' %}" class="home-link">Go to Home</a>
+
+</body>
+
+</html>
